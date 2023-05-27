@@ -50,6 +50,10 @@ export const postWebhook = (req: Request, res: Response) => {
       // will only ever contain one event, so we get index 0
       const webhook_event = entry.messaging[0];
       console.log(webhook_event);
+
+      // Get the sender PSID
+      const sender_psid = webhook_event?.sender.id;
+      console.log('Sender PSID: ' + sender_psid);
     });
 
     // Return a '200 OK' response to all events
