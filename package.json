@@ -13,12 +13,15 @@
   "author": "Zomer Gregorio",
   "license": "ISC",
   "dependencies": {
+    "@supabase/supabase-js": "^2.23.0",
+    "axios": "^1.4.0",
     "body-parser": "^1.20.2",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "morgan": "^1.10.0",
-    "node": "^20.2.0"
+    "node": "^20.2.0",
+    "openai": "^3.2.1"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.62",

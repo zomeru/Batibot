@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import { chatCompletion } from '../utils/gpt';
 
 type ReceivedMessage = {
   text?: string;
@@ -42,6 +43,10 @@ interface BodyType {
 }
 
 export const test = async (_req: Request, res: Response) => {
+  // const gptResponse = await chatCompletion('Give another answer.', 123123);
+  // // console.log({
+  // //   gptResponse,
+  // // });
   return res.send('Hello World');
 };
 
@@ -100,23 +105,32 @@ export const postWebhook = (req: Request, res: Response) => {
 };
 
 // Handles messages events
-function handleMessage(sender_psid: string, received_message: ReceivedMessage) {
+async function handleMessage(
+  sender_psid: string,
+  received_message: ReceivedMessage
+) {
   let response: MessageResponse;
 
   // Check if the message contains text
   if (received_message.text) {
+    // use GPT-3 to generate a response
+    const gptResponse = await chatCompletion(
+      received_message.text,
+      Number(sender_psid)
+    );
+
     // Create the payload for a basic text message
     response = {
-      text: `You sent a text message`,
+      text: gptResponse,
     };
   }
 
   // Create the payload for attachment
   else if (received_message.attachments) {
     // Gets the URL of the message attachment
-    const attachment_url = received_message.attachments[0]?.payload.url;
+    // const attachment_url = received_message.attachments[0]?.payload.url;
     response = {
-      text: `You sent an attachment. ${attachment_url}`,
+      text: `We're sorry, we don't support this feature yet`,
     };
   }
 
