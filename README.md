@@ -2,7 +2,8 @@
 
 ChatGpt in your messenger app!
 
-![Demo](https://raw.githubusercontent.com/zomeru/Batibot/main/assets/IMG-0019.GIF)
+<!-- ![Demo](https://raw.githubusercontent.com/zomeru/Batibot/main/assets/IMG-0019.GIF) -->
+<img src="https://raw.githubusercontent.com/zomeru/Batibot/main/assets/IMG-0019.GIF" width="50%" height="50%">
 
 ## 🛠 Set Up
 
@@ -32,9 +33,9 @@ ChatGpt in your messenger app!
 
 4. Create a `.env` file
 
-   > Generate an OPENAI API key -> https://platform.openai.com/account/api-keys
-   > Create a Facebook Developer account, create an app and generate an access token -> https://developers.facebook.com/apps/?show_reminder=true
-   > Create an account on Supabase and create a new project -> https://supabase.com/dashboard/projects
+   - Generate an OPENAI API key -> https://platform.openai.com/account/api-keys
+   - Create a Facebook Developer account, create an app and generate an access token -> https://developers.facebook.com/apps/?show_reminder=true
+   - Create an account on Supabase and create a new project -> https://supabase.com/dashboard/projects
 
    ```
    PORT=8000
