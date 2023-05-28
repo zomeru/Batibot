@@ -2,7 +2,7 @@
 
 ChatGpt in your messenger app!
 
-![Demo](https://github.com/zomeru/Batibot/assets/47204120/8f986d38-33e6-4064-bb10-6cb5ef6af87c)
+![Demo](https://raw.githubusercontent.com/zomeru/Batibot/main/assets/IMG-0019.GIF)
 
 ## 🛠 Set Up
 
