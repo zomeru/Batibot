@@ -1,4 +1,4 @@
-# Security Policy
+# Privacy Policy
 
 
 Privacy Policy for Batibot, a messenger bot owered by Chat Completion GPT-3.5
