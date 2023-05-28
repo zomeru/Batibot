@@ -43,10 +43,6 @@ interface BodyType {
 }
 
 export const test = async (_req: Request, res: Response) => {
-  // const gptResponse = await chatCompletion('Give another answer.', 123123);
-  // // console.log({
-  // //   gptResponse,
-  // // });
   return res.send('Hello World');
 };
 
@@ -130,7 +126,7 @@ async function handleMessage(
     // Gets the URL of the message attachment
     // const attachment_url = received_message.attachments[0]?.payload.url;
     response = {
-      text: `We're sorry, we don't support this feature yet`,
+      text: `We're sorry, we don't support responding to attachments yet.`,
     };
   }
 
@@ -148,9 +144,9 @@ function handlePostback(sender_psid: string, received_postback: any) {
 
   // Set the response based on the postback payload
   if (payload === 'yes') {
-    response = { text: 'Thanks!' };
+    response = { text: 'Response to "yes" payload' }; // TODO: add a response here
   } else if (payload === 'no') {
-    response = { text: 'Oops, try sending another image.' };
+    response = { text: 'Response to "no" payload' }; // TODO: add a response here
   }
   // Send the message to acknowledge the postback
   // @ts-ignore
