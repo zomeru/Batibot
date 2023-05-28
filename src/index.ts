@@ -23,5 +23,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 initWebRoutes(app);
 
 app.listen(app.get('port'), () => {
-  console.log(`Server is running at http://localhost:${app.get('port')}`);
+  if (process.env.NODE_ENV === 'development') {
+    console.log(`Server is running at http://localhost:${app.get('port')}`);
+  } else {
+    console.log('Server is running');
+  }
 });
