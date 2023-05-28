@@ -3,7 +3,7 @@
 ChatGpt in your messenger app!
 
 <!-- ![Demo](https://raw.githubusercontent.com/zomeru/Batibot/main/assets/IMG-0019.GIF) -->
-<img src="https://raw.githubusercontent.com/zomeru/Batibot/main/assets/IMG-0019.GIF" width="50%" height="50%">
+<img src="https://raw.githubusercontent.com/zomeru/Batibot/main/assets/IMG-0019.GIF" width="40%" height="40%">
 
 ## 🛠 Set Up
 
